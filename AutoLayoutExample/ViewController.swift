@@ -15,31 +15,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var profileImage: UIImageView = {
-       let image = UIImageView(image: UIImage(named: "image1"))
-       image.translatesAutoresizingMaskIntoConstraints = false
-       image.contentMode = .scaleAspectFit
-        return image
-    }()
-    
-    var descriptionText: UITextView = {
-        let textView = UITextView()
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        
-        let attributedText = NSMutableAttributedString(string: "Hi I am making a private application to share Images amongst community", attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16)])
-        
-        attributedText.append(NSAttributedString(string: "\n\n This is the description about the title written on the top. NSMutableAttributedStringRocks", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 12), NSAttributedString.Key.foregroundColor : UIColor.gray]))
-        
-        textView.attributedText = attributedText
-        
-//        textView.text = "Hi I am making a private application to share Images amongst community"
-//        textView.font = UIFont.boldSystemFont(ofSize: 15)
-        textView.textAlignment = .center
-        textView.isEditable = false
-        textView.isScrollEnabled = false
-        return textView
-    }()
-    
+  
     
     let nextButton: UIButton = {
         let button = UIButton(type: .system)
@@ -74,8 +50,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        view.addSubview(descriptionText)
-        self.autoLayout()
         
         self.bottomControl()
     }
@@ -106,35 +80,6 @@ class ViewController: UIViewController {
     
     
     
-    func autoLayout(){
-        
-        let topContainerView = UIView()
-        view.addSubview(topContainerView)
-
-        //Enabling Auto layout
-        topContainerView.translatesAutoresizingMaskIntoConstraints = false
-       
-        topContainerView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5).isActive = true
-        topContainerView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
-        topContainerView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        topContainerView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        topContainerView.addSubview(profileImage)
-        
-        
-        
-        
-        profileImage.centerXAnchor.constraint(equalTo: topContainerView.centerXAnchor).isActive = true
-        profileImage.centerYAnchor.constraint(equalTo: topContainerView.centerYAnchor).isActive = true
-        profileImage.widthAnchor.constraint(equalToConstant: 200.0).isActive = true
-        profileImage.heightAnchor.constraint(equalTo: topContainerView.heightAnchor, multiplier: 0.5).isActive = true
-        
-        //Auto Layout for description TextView
-        
-        descriptionText.topAnchor.constraint(equalTo: topContainerView.bottomAnchor).isActive = true
-        descriptionText.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
-        descriptionText.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        descriptionText.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
-    
-    }
+  
 }
 

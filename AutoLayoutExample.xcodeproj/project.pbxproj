@@ -12,6 +12,9 @@
 		57E77F7B21CB7B0600C427DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57E77F7921CB7B0600C427DD /* Main.storyboard */; };
 		57E77F7D21CB7B0900C427DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57E77F7C21CB7B0900C427DD /* Assets.xcassets */; };
 		57E77F8021CB7B0900C427DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57E77F7E21CB7B0900C427DD /* LaunchScreen.storyboard */; };
+		57E77F8821CBEA7000C427DD /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E77F8721CBEA7000C427DD /* SwipingController.swift */; };
+		57E77F8A21CBF47900C427DD /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E77F8921CBF47900C427DD /* PageCell.swift */; };
+		57E77F8C21CC16AB00C427DD /* Pages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E77F8B21CC16AB00C427DD /* Pages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		57E77F7C21CB7B0900C427DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57E77F7F21CB7B0900C427DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57E77F8121CB7B0900C427DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57E77F8721CBEA7000C427DD /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		57E77F8921CBF47900C427DD /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
+		57E77F8B21CC16AB00C427DD /* Pages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				57E77F7C21CB7B0900C427DD /* Assets.xcassets */,
 				57E77F7E21CB7B0900C427DD /* LaunchScreen.storyboard */,
 				57E77F8121CB7B0900C427DD /* Info.plist */,
+				57E77F8721CBEA7000C427DD /* SwipingController.swift */,
+				57E77F8921CBF47900C427DD /* PageCell.swift */,
+				57E77F8B21CC16AB00C427DD /* Pages.swift */,
 			);
 			path = AutoLayoutExample;
 			sourceTree = "<group>";
@@ -137,6 +146,9 @@
 			files = (
 				57E77F7821CB7B0600C427DD /* ViewController.swift in Sources */,
 				57E77F7621CB7B0600C427DD /* AppDelegate.swift in Sources */,
+				57E77F8C21CC16AB00C427DD /* Pages.swift in Sources */,
+				57E77F8A21CBF47900C427DD /* PageCell.swift in Sources */,
+				57E77F8821CBEA7000C427DD /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
